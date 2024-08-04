@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantayan Island</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" style="z-index: 1000 !important;">
+        <div class="container">
+            
+            <button type="button" class="navbar-toggler fs-small border-0 rounded-0" data-bs-toggle="collapse" data-bs-target="#navbar"><i
+                class="navbar-toggler-icon"></i></button>
+            <h1 class="navbar-brand mb-0"><a href="index.html" class="text-dark text-decoration-none"><span
+                        class="text-danger fw-bolder">BE |</span> Bantayan Island</a></h1>
+
+
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Plan a Trip</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <a href="" class="nav-link text-dark">Sign In</a>
+                <span>|</span>
+                <a href="" class="nav-link text-dark fs-small my-auto"><i class="fa fa-search"></i></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="hero-container-eat position-relative d-flex align-items-center">
+
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <a href="index.html" class="btn btn-danger mb-3 fs-small rounded-0"><i class="fa fa-arrow-left-long text-light"></i></a>
+                    <h1 class="text-light fw-bolder">Where to Stay?</h1>
+                    <form method="POST" class="d-flex align-items-center mt-3">
+                        <input type="text" class="form-control rounded-0 rounded-end rounded-pill"
+                            placeholder="Search">
+                        <button type="submit" class="btn btn-light rounded-0 rounded-start rounded-pill"><i
+                                class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="col-12">
+                    <span class="text-light border-bottom">Municipalities</span>
+                </div>
+                
+                <div class="col-lg-6">
+                    <a href="" class="btn-link active">Bantayan</a>
+                    <a href="" class="btn-link">Santa Fe</a>
+                    <a href="" class="btn-link">Madridejos</a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <section class="container py-4 content-list rooms">
+        
+        <div class="row g-3">
+
+            <div class="col-9 border-bottom pb-3 mb-3">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h5>10 results</h5>
+                    <select class="border-0" id="type">
+                        <option value="1">Popular</option>
+                        <option value="2">Relevance</option>
+                        <option value="3">Popular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 row">
+                <div class="col-lg-9">
+                    
+                    <div class="row g-3">
+
+                        <!-- CONTENT -->
+                        <div class="col-12 content" data-id="1">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="assets/img/Camp-Sawi-in-Bantayan-Island.jpg" alt="image" class="w-100 min-height-eat-img">
+                                </div>
+
+                                <div class="col-lg-8 py-2">
+                                    <p class="text-secondary mb-1">Santa Fe</p>
+                                    <h5 class="fw-bold">Paradise Resort</h5>
+                                    <p class="mb-1"><i class="fa fa-location-dot"></i> 5Q2C+6F2, Tingtingon, Santa Fe, 6047 Cebu</p>
+                                    <p><i class="fa fa-clock"></i> 2:00 PM</p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#show-room" class="btn-link-bordered px-3" >View</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- CONTENT END -->
+
+                         <!-- CONTENT -->
+                         <div class="col-12 content" data-id="2">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="assets/img/Camp-Sawi-in-Bantayan-Island.jpg" alt="image" class="w-100 min-height-eat-img">
+                                </div>
+
+                                <div class="col-lg-8 py-2">
+                                    <p class="text-secondary mb-1">Santa Fe</p>
+                                    <h5 class="fw-bold">Paradise Resort</h5>
+                                    <p class="mb-1"><i class="fa fa-location-dot"></i> 5Q2C+6F2, Tingtingon, Santa Fe, 6047 Cebu</p>
+                                    <p><i class="fa fa-clock"></i> 2:00 PM</p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#show-room" class="btn-link-bordered px-3" >View</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- CONTENT END -->
+
+                    </div>
+
+                </div>
+    
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Search Filters</h5>
+
+                    <div class="d-flex gap-2 mb-3" style="width: 100%; flex-wrap: wrap;">
+                        <a href="" class="btn-link-bordered">With Pool</a>
+                        <a href="" class="btn-link-bordered">Couple</a>
+                        <a href="" class="btn-link-bordered">Budget</a>
+                        <a href="" class="btn-link-bordered">Family</a>
+                        <a href="" class="btn-link-bordered">Resort</a>
+                    </div>
+
+                    <h6 class="mt-3">Filter by Price</h6>
+                    <select name="" id="" class="select-default w-100 my-2">
+                        <option value="1000-2000">1,000 - 2,000</option>
+                        <option value="2500-4000">2,500 - 4,000</option>
+                        <option value="40001-10000">40,001 - 10,000</option>
+                    </select>
+
+                    <h6 class="mt-2">Filter by Budget</h6>
+                    <select name="" id="" class="select-default w-100 my-2">
+                        <option value="500-2500">500 - 2,500</option>
+                        <option value="1501-3000">1,501 - 3,000</option>
+                        <option value="3001-5000">3,001 - 5,000</option>
+                    </select>
+
+                    <h6 class="mt-2">No. of People Per Room</h6>
+                    <select name="" id="" class="select-default w-100 my-2">
+                        <option value="500-2500">2 - 3</option>
+                        <option value="1501-3000">4 - 7</option>
+                        <option value="3001-5000"> 8 - unli</option>
+                    </select>
+
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div class="loader d-none">
+        <dotlottie-player src="https://lottie.host/8c95e83a-4f0d-4ec9-b612-2d4d0be81ac1/09NcIeliNP.json" background="transparent" speed="1" class="lotify" loop autoplay></dotlottie-player>
+    </div>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
