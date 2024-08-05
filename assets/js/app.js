@@ -1,5 +1,3 @@
-$(".loader").removeClass("d-none");
-
 $(document).ready(function(){
     let loader = $(".loader")
     loader.addClass("d-none");
@@ -7,14 +5,10 @@ $(document).ready(function(){
         // let navbarItems = $("article nav ul li a");
         // let pages = $(".pages")
         // let target = $(this).attr("data-target")
-
         // navbarItems.filter(".active").removeClass("active");
         // $(this).addClass("active");
-
         // pages.filter(".active").removeClass("active").addClass("d-none");
         // $(target).removeClass("d-none").addClass("active");
-
-
     // });
 
     $(".rooms .content").click(function(){
@@ -36,5 +30,22 @@ $(document).ready(function(){
         }, 2000);
     })
 
+    $(".img-list").click(function(){
+        let maxImgContainer = $(".max-image");
+        $(".loader").removeClass("d-none")
+        setTimeout(() => {
+            $(".loader").addClass("d-none")
+            if (maxImgContainer.hasClass("d-none")) {
+                maxImgContainer.removeClass("d-none")
+                $('.max-image img').attr("src", $(this).attr("src"))
+            }else{
+                maxImgContainer.addClass("d-none")
+            }
+        }, 1000);
+    })
+
+    $(".max-image img").click(function(){
+        $(".max-image").addClass("d-none")
+    })
 
 });
