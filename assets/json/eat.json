@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "name" : "Rios",
+        "description" : "Rio Guest House, Cafe and Restobar is strategically located at the heart of Pob. Madridejos. Within",
+        "frontImg" : "rio/front-img.jpg",
+        "images" : [
+            "rio/img-1.jpg",
+            "rio/img-2.jpg",
+            "rio/img-3.jpg",
+            "rio/img-4.jpg",
+            "rio/img-3.jpg",
+            "rio/img-1.jpg"
+        ],
+        "location" : "Poblacion, Madridejos",
+        "phone" : "02-1234-1234",
+        "mobile" : "09094511207",
+        "googleMap" : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31316.427682734036!2d123.75856839100292!3d11.1465968039008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a88815fa2d9767%3A0xf4b260bb39a54a78!2sSandira%20Beach!5e0!3m2!1sen!2sph!4v1722868852356!5m2!1sen!2sph"
+    },
+    {
+        "id" : 2,
+        "name" : "Liquido",
+        "description" : "Bantayan is no stranger to being a consistent candidate for the best beaches ever. Liquido by the C completes the fun and adventures you seek on the island, just located in Baigad Lagoon Beach. The moment you step into the resort, you just have to look and be where your feet are – grains of sand caught in between your toes and the crystal blue waters being the cold contrast to the hot sun.",
+        "frontImg" : "liquido/front-img.jpg",
+        "images" : [
+            "liquido/img-1.jpg",
+            "liquido/img-2.jpg",
+            "liquido/img-3.jpg",
+            "liquido/img-4.jpg",
+            "liquido/img-4.jpg",
+            "liquido/img-4.jpg"
+        ],
+        "location" : "Poblacion, Madridejos",
+        "phone" : "02-1234-1234",
+        "mobile" : "09094511207",
+        "googleMap" : "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.426971351137!2d123.80477187554249!3d11.15598895207689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a862ae217692d1%3A0xe9e434407c53f869!2sLiquido!5e0!3m2!1sen!2sph!4v1723139103952!5m2!1sen!2sph"
+    }
+]

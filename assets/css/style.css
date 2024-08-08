@@ -13,6 +13,7 @@
     --clr-light: hsl(0, 0%, 100%);
     --clr-lighter: rgba(0,0,0,0.3);
     --clr-overlay: rgba(0,0,0,0.5);
+    --kiosk-font: 1.5rem;
 }
 
 *{
@@ -40,9 +41,11 @@ body{
     height: var(--h-100dvh);
 }
 
+/* HOME */
+
 .hero-container{
-    min-height: var(--h-70vh) !important;
-    background: url(../img/KOTA-BOOK-SEO.jpg);
+    min-height: var(--h-100dvh) !important;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../img/KOTA-BOOK-SEO.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,7 +53,7 @@ body{
 }
 
 .hero-container-eat{
-    min-height: var(--h-40vh) !important;
+    min-height: 30vh !important;
     background: url(../img/KOTA-BOOK-SEO.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -65,6 +68,15 @@ body{
     background-size: cover;
     padding: 20px 0;
 }
+
+.hero-container .card{
+    cursor: pointer;
+}
+
+.hero-container .card:hover{
+    box-shadow: 0px 0px 20px 2px var(--clr-danger);
+}
+/* END-HOME */
 
 article nav ul li a{
     transition: .3s ease-in-out;
@@ -160,9 +172,31 @@ article .card:hover{
     transition: .3s ease;
 }
 
-.content-list .content:hover{
-    box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.2) !important;
+.content-list .content .card{
     cursor: pointer;
+   
+}
+
+.content-list img{
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-list .content-img-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--clr-overlay);
+    transition: 3s ease-in-out;
+}
+
+.content-list .content .card:hover .content-img-bottom{
+    height: 100%;
+    background: var(--clr-overlay);
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .lotify{
@@ -183,15 +217,6 @@ article .card:hover{
     z-index: 1000;
 }
 
-/* FEEDBACK */
-.user-feedback-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 /* MAX IMAGE */
 .max-image{
     position: fixed;
@@ -205,10 +230,48 @@ article .card:hover{
 }
 
 .max-image img{
-    object-fit: cover;
+    object-fit:contain;
     object-position: center;
 }
 
 .img-list{
     cursor: zoom-in;
+}
+
+
+/* KIOSK */
+@media (max-width: 1920px){
+    *{
+        font-size: var(--kiosk-font);
+    }
+    
+    h1 *{
+        font-size: 3rem !important;
+    }
+
+    h2 *{
+        font-size: 1.8rem !important;
+    }
+
+    h3 *{
+        font-size: 1.7rem !important;
+    }
+
+    .content-list img{
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+  
+    .select-default{
+        border: 1px solid var(--clr-lighter) !important;
+        padding: 2px 5px !important;
+    }
+
+    #preview-img img{
+        height: 150px !important;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
