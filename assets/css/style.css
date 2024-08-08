@@ -44,8 +44,8 @@ body{
 /* HOME */
 
 .hero-container{
-    height: var(--h-100dvh) !important;
-    height: var(--h-100vh) !important;
+    min-height: var(--h-100dvh) !important;
+    min-height: var(--h-100vh) !important;
     background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../img/KOTA-BOOK-SEO.jpg);
     background-repeat: no-repeat;
     background-position: center;
