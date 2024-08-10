@@ -103,6 +103,10 @@ $(document).ready(function () {
   $("#filter-type a").click(function () {
     let value = $(this).attr("data-type");
 
+    let filterAnchor = $("#filter-type a");
+    filterAnchor.filter(".active").removeClass("active");
+    $(this).addClass("active");
+
     // Remove existing content elements
     if ($("#room-list .content").length) {
       $("#room-list .content").remove();
