@@ -307,6 +307,108 @@ $(document).ready(function () {
       },
     });
   });
+  
+  $("#search").keyup(function () {
+    let value = $(this).val();
+
+    // Remove existing content elements
+    
+    if ($(this).val() != '') {
+       if ($("#room-list .content").length) {
+        $("#room-list .content").remove();
+      }
+
+      $.ajax({
+        url: "./assets/json/rooms.json",
+        method: "GET",
+        success: function (response) {
+          let matchingRooms = response.filter(function (room) {
+            return room.name.toLowerCase().includes(value.toLowerCase());
+          });
+
+          if (matchingRooms.length > 0) {
+            $("#no-record").addClass("d-none");
+            matchingRooms.forEach(function (room) {
+              $("#room-list").append(`
+                          <div class="col-sm-12 col-md-6 col-lg-4 content" data-id="${room.id}"> 
+                              <div class="card position-relative">
+                                  <img src="assets/img/${room.frontImg}" alt="img" class="w-100">
+                                  <div class="content-img-bottom p-3 w-100">
+                                      <div>
+                                          <h5 class="text-light">${room.name}</h5>
+                                          <p class="text-light mb-0">${room.address}</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      `);
+            });
+
+            // Add click event to the newly created elements
+            $("#room-list .content").click(function () {
+              let roomId = $(this).attr("data-id");
+              window.location.href = "view-room.html?view=" + roomId;
+            });
+
+            $("#count").text(matchingRooms.length);
+          } else {
+            $("#no-record").removeClass("d-none");
+          }
+
+          $("#count").text(matchingRooms.length);
+        },
+        error: function (xhr, status, error) {
+          console.error("AJAX request failed:", status, error);
+        },
+      });
+    }else{
+      if ($("#room-list .content").length) {
+        $("#room-list .content").remove();
+      }
+
+      $.ajax({
+        url: "./assets/json/rooms.json",
+        method: "GET",
+        success: function (response) {
+
+          if (response.length > 0) {
+            $("#no-record").addClass("d-none");
+            response.forEach(function (room) {
+              $("#room-list").append(`
+                          <div class="col-sm-12 col-md-6 col-lg-4 content" data-id="${room.id}"> 
+                              <div class="card position-relative">
+                                  <img src="assets/img/${room.frontImg}" alt="img" class="w-100">
+                                  <div class="content-img-bottom p-3 w-100">
+                                      <div>
+                                          <h5 class="text-light">${room.name}</h5>
+                                          <p class="text-light mb-0">${room.address}</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      `);
+            });
+
+            // Add click event to the newly created elements
+            $("#room-list .content").click(function () {
+              let roomId = $(this).attr("data-id");
+              window.location.href = "view-room.html?view=" + roomId;
+            });
+
+            $("#count").text(response.length);
+          } else {
+            $("#no-record").removeClass("d-none");
+          }
+
+          $("#count").text(response.length);
+        },
+        error: function (xhr, status, error) {
+          console.error("AJAX request failed:", status, error);
+        },
+      });
+    }
+
+  });
 
   $(".max-image img").click(function () {
     $(".max-image").addClass("d-none");

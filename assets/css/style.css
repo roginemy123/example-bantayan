@@ -259,7 +259,7 @@ article .card:hover{
     }
 
     .content-list img{
-        height: 300px;
+        height: 300px !important;
         object-fit: cover;
         object-position: center;
     }
@@ -273,6 +273,10 @@ article .card:hover{
         height: 150px !important;
         object-fit: cover;
         object-position: center;
+    }
+
+    .search-icon{
+        font-size: 5px !important;
     }
 
 }

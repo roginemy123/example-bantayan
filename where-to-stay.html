@@ -35,15 +35,15 @@
         <div class="container-fluid">
             <div class="row g-3">
                 <div class="col-lg-6">
-                    <!-- <a href="index.html" class="btn btn-danger mb-3 fs-small rounded-0 p-0 px-2"><i class="fa fa-arrow-left-long text-light"></i></a> -->
+                    <a href="index.html" class="btn btn-danger mb-3 fs-small rounded-0 p-0 px-2"><i class="fa fa-arrow-left-long text-light"></i></a>
                     <h1 class="text-light fw-bolder">Where to Stay?</h1>
-                    <form method="POST" class="d-flex align-items-center mt-3">
+                    <div class="d-flex align-items-center mt-3">
                         <input type="text" class="form-control rounded-0 rounded-end rounded-pill"
-                            placeholder="Search">
-                        <button type="submit" class="btn btn-light rounded-0 rounded-start rounded-pill"><i
+                            placeholder="Search" id="search">
+                        <button type="button" class="btn btn-light rounded-0 rounded-start rounded-pill search-icon"><i
                                 class="fa fa-search"></i></button>
                                
-                    </form>
+                    </div>
                 </div>
 
             </div>
@@ -80,11 +80,11 @@
                         <h5 class="mb-3">Search Filters</h5>
     
                         <div class="d-flex gap-2 mb-3" style="width: 100%; flex-wrap: wrap;" id="filter-type">
-                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="with-pool">With Pool</a>
-                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="couple">Couple</a>
-                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="budget">Budget</a>
-                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="family">Family</a>
-                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="resort">Resort</a>
+                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="0">With Pool</a>
+                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="1">Couple</a>
+                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="2">Budget</a>
+                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="3">Family</a>
+                            <a href="javascript: void(0);" class="btn-link-bordered" data-type="4">Resort</a>
                         </div>
     
                         <h6 class="mt-3">Filter by Price</h6>
