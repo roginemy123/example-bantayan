@@ -286,3 +286,9 @@ article .card:hover{
     }
 
 }
+
+@media (max-width: 600px){
+    .qr_container figure{
+        width: 100% !important;
+    }
+}
