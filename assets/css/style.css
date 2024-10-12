@@ -247,7 +247,7 @@ article .card:hover{
 
 .qr_code{  
     width: 300px !important;
-    height: 300px !important;
+    min-height: 300px !important;
 }
 
 /* KIOSK */
