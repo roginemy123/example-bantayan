@@ -245,11 +245,10 @@ article .card:hover{
     object-position: center;
 }
 
-.qr_container{
+.qr_container .card{  
     width: 200px;
     height: 200px;
 }
-.qr_container .card{ width: 300px !important; }
 
 /* KIOSK */
 @media (min-width: 1920px){
