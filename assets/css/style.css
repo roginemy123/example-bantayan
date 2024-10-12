@@ -294,6 +294,5 @@ article .card:hover{
 @media (max-width: 600px){
     .qr_code {
         width: 100% !important;
-        height:100% !important;
     }
 }
