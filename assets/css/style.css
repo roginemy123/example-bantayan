@@ -250,7 +250,7 @@ article .card:hover{
     height: 200px;
 }
 
-.qr_code{ width: 300px; }
+.qr_code{ width: 300px !important; }
 
 /* KIOSK */
 @media (min-width: 1920px){
