@@ -249,7 +249,7 @@ article .card:hover{
     width: 200px;
     height: 200px;
 }
-
+.qr_container .card{ width: 300px !important; }
 .qr_code{ width: 300px !important; }
 
 /* KIOSK */
