@@ -245,9 +245,9 @@ article .card:hover{
     object-position: center;
 }
 
-.qr_container .card{  
-    width: 200px;
-    height: 200px;
+.qr_code{  
+    width: 200px !important;
+    height: 200px !important;
 }
 
 /* KIOSK */
